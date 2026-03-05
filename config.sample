@@ -1,0 +1,11 @@
+# Sample configuration variables for local development
+API_BASE_URL=https://fakestoreapi.com
+PRODUCTS_ENDPOINT=/products
+TOTAL_PRODUCTS=20
+CHUNK_SIZE=5
+RETRY_LIMIT=3
+CONCURRENCY_LIMIT=4
+REQUEST_TIMEOUT_SECONDS=20
+BACKOFF_BASE_SECONDS=1
+BACKOFF_MAX_SECONDS=16
+USER_AGENT=fakestore-extractor/1.0
