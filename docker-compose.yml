@@ -1,0 +1,32 @@
+services:
+
+  fakestore:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        UID: ${UID:-1000}
+        GID: ${GID:-1000}
+    container_name: extractor_fakestore
+    command: python -u extract_products.py
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    restart: "no"
+
+  mockaroo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        UID: ${UID:-1000}
+        GID: ${GID:-1000}
+    container_name: extractor_mockaroo
+    command: python -u extract_products_mockaroo.py
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    restart: "no"
+    depends_on:
+      fakestore:
+        condition: service_completed_successfully

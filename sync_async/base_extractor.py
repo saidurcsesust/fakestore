@@ -7,8 +7,12 @@ import time
 from datetime import datetime
 from typing import Any, Dict, List
 
-import sync_async.json_formatter as Formatter
+import json_formatter as Formatter
 import config
+
+RETRY_LIMIT = 3
+CHUNK_SIZE = 5
+TOTAL_PRODUCTS = 20
 
 
 class BaseProductExtractor:
@@ -23,8 +27,7 @@ class BaseProductExtractor:
     
     # Logging                                                            
     def _setup_logger(self) -> logging.Logger:
-        log_dir = os.path.join("logs", self.date_str)
-        os.makedirs(log_dir, exist_ok=True)
+        log_dir = self._resolve_log_dir()
         log_path = os.path.join(
             log_dir,
             f"{self.script_name}_{self.date_str}_{self.time_str}.json",
@@ -38,25 +41,41 @@ class BaseProductExtractor:
         logger.addHandler(handler)
         return logger
 
+    def _resolve_log_dir(self) -> str:
+        preferred_dirs = []
+        env_log_dir = os.getenv("LOG_DIR")
+        if env_log_dir:
+            preferred_dirs.append(env_log_dir)
+        preferred_dirs.extend(("/app/logs", "logs", "/tmp/logs"))
+
+        for base_dir in preferred_dirs:
+            candidate = os.path.join(base_dir, self.date_str)
+            try:
+                os.makedirs(candidate, exist_ok=True)
+                return candidate
+            except OSError:
+                continue
+        raise PermissionError("Unable to create a writable log directory")
+
     
     # Config validation                                                   
     def _validate_config(self) -> int:
-        if config.CHUNK_SIZE <= 0:
+        if CHUNK_SIZE <= 0:
             raise ValueError("CHUNK_SIZE must be greater than 0")
-        if config.TOTAL_PRODUCTS <= 0:
+        if TOTAL_PRODUCTS <= 0:
             raise ValueError("TOTAL_PRODUCTS must be greater than 0")
-        if config.RETRY_LIMIT < 0:
+        if 4 < 0:
             raise ValueError("RETRY_LIMIT must be 0 or greater")
-        if config.TOTAL_PRODUCTS % config.CHUNK_SIZE != 0:
+        if TOTAL_PRODUCTS % CHUNK_SIZE != 0:
             raise ValueError("TOTAL_PRODUCTS must be divisible by CHUNK_SIZE")
-        return config.TOTAL_PRODUCTS // config.CHUNK_SIZE
+        return TOTAL_PRODUCTS // CHUNK_SIZE
 
 
     # URL building                                                         
     def _build_url(self, skip: int) -> str:
         return (
             f"{config.API_BASE_URL}{config.PRODUCTS_ENDPOINT}"
-            f"?limit={config.CHUNK_SIZE}&skip={skip}"
+            f"?limit={CHUNK_SIZE}&skip={skip}"
         )
 
 
@@ -67,11 +86,11 @@ class BaseProductExtractor:
         *,
         label: str,
     ) -> None:
-        out_dir = os.path.join("data", "json")
+        out_dir = os.path.join("data", label)
         os.makedirs(out_dir, exist_ok=True)
         file_path = os.path.join(
             out_dir,
-            f"products_{label}{chunk_number}_{self.date_str}_{self.time_str}.json",
+            f"products_{chunk_number}_{self.date_str}_{self.time_str}.json",
         )
         with open(file_path, "w", encoding="utf-8") as fh:
             json.dump(products, fh, ensure_ascii=True, indent=2)
@@ -113,8 +132,8 @@ class BaseProductExtractor:
         return f"req-{int(time.time() * 1000)}-{attempt}"
 
     def _assert_total(self, extracted_count: int) -> None:
-        if extracted_count != config.TOTAL_PRODUCTS:
+        if extracted_count != TOTAL_PRODUCTS:
             raise ValueError(
                 f"Total extraction mismatch: "
-                f"expected {config.TOTAL_PRODUCTS}, got {extracted_count}"
+                f"expected {TOTAL_PRODUCTS}, got {extracted_count}"
             )

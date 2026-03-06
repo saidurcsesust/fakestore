@@ -1,0 +1,14 @@
+{"timestamp": "2026-03-06T08:56:14.985099+00:00", "level": "INFO", "logger": "extract_products_async", "message": "Starting async extraction for 20 products in 4 chunks"}
+{"timestamp": "2026-03-06T08:56:15.218648+00:00", "level": "INFO", "logger": "extract_products_async", "message": "HTTP response received", "request_id": "req-1772787374996-0", "url": "https://fakestoreapi.com/products?limit=5&skip=10", "method": "GET", "status_code": 200, "elapsed_ms": 221.81}
+{"timestamp": "2026-03-06T08:56:15.222443+00:00", "level": "INFO", "logger": "extract_products_async", "message": "HTTP response received", "request_id": "req-1772787374995-0", "url": "https://fakestoreapi.com/products?limit=5&skip=5", "method": "GET", "status_code": 200, "elapsed_ms": 227.01}
+{"timestamp": "2026-03-06T08:56:15.232003+00:00", "level": "INFO", "logger": "extract_products_async", "message": "HTTP response received", "request_id": "req-1772787374996-0", "url": "https://fakestoreapi.com/products?limit=5&skip=15", "method": "GET", "status_code": 200, "elapsed_ms": 234.92}
+{"timestamp": "2026-03-06T08:56:15.233067+00:00", "level": "INFO", "logger": "extract_products_async", "message": "HTTP response received", "request_id": "req-1772787374985-0", "url": "https://fakestoreapi.com/products?limit=5&skip=0", "method": "GET", "status_code": 200, "elapsed_ms": 247.23}
+{"timestamp": "2026-03-06T08:56:15.413411+00:00", "level": "INFO", "logger": "extract_products_async", "message": "Wrote chunk file: data/async/products_1_260306_085614.json"}
+{"timestamp": "2026-03-06T08:56:15.413772+00:00", "level": "INFO", "logger": "extract_products_async", "message": "Chunk 1/4 complete with 5 products"}
+{"timestamp": "2026-03-06T08:56:15.415273+00:00", "level": "INFO", "logger": "extract_products_async", "message": "Wrote chunk file: data/async/products_2_260306_085614.json"}
+{"timestamp": "2026-03-06T08:56:15.415549+00:00", "level": "INFO", "logger": "extract_products_async", "message": "Chunk 2/4 complete with 5 products"}
+{"timestamp": "2026-03-06T08:56:15.416486+00:00", "level": "INFO", "logger": "extract_products_async", "message": "Wrote chunk file: data/async/products_3_260306_085614.json"}
+{"timestamp": "2026-03-06T08:56:15.416734+00:00", "level": "INFO", "logger": "extract_products_async", "message": "Chunk 3/4 complete with 5 products"}
+{"timestamp": "2026-03-06T08:56:15.417912+00:00", "level": "INFO", "logger": "extract_products_async", "message": "Wrote chunk file: data/async/products_4_260306_085614.json"}
+{"timestamp": "2026-03-06T08:56:15.418118+00:00", "level": "INFO", "logger": "extract_products_async", "message": "Chunk 4/4 complete with 5 products"}
+{"timestamp": "2026-03-06T08:56:15.418311+00:00", "level": "INFO", "logger": "extract_products_async", "message": "Async extraction completed", "elapsed_ms": 433.23}

@@ -10,35 +10,41 @@
 - `base_extractor.py`: Shared base class with common logic (logging, config validation, URL building, file writing, retry helpers).
 - `mockaroo_common.py`: Shared helpers for Mockaroo extractors (URL/header/param builders, payload parsing, chunk validation).
 
-## Complete Setup Procedure
-1. Create and activate a Python virtual environment:
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Export values you want to override, for example:
-   ```bash
-   export TOTAL_PRODUCTS=20
-   export CHUNK_SIZE=5
-   export RETRY_LIMIT=3
-   export CONCURRENCY_LIMIT=4
-   export MOCKAROO_SCHEMA_KEY=your_mockaroo_schema_key
-   export MOCKAROO_API_KEY=your_mockaroo_api_key
-   ```
+---
 
-## Commands to Run the Scripts
-- Run FakeStore sync + async extraction:
-  ```bash
-  python extract_products.py
-  ```
-- Run Mockaroo sync + async extraction:
-  ```bash
-  python extract_products_mockaroo.py
-  ```
+## Running with Docker
+
+### Prerequisites
+- Docker and Docker Compose installed
+
+### Build and run both extractors
+```bash
+docker-compose up --build
+```
+
+`fakestore` runs first; `mockaroo` starts automatically once it completes successfully.
+
+### Run a single extractor
+```bash
+docker-compose up --build fakestore
+docker-compose up --build mockaroo
+```
+
+### Check live output while running
+```bash
+docker-compose logs -f
+```
+
+### Confirm output data was written
+```bash
+ls data/json/
+```
+
+### Clean up containers
+```bash
+docker-compose down
+```
+
 
 ## Output Locations
 - Data chunks: `data/json/products_<type>_<chunk_number>_<date>_<time>.json`
@@ -50,3 +56,4 @@
 - If `TOTAL_PRODUCTS` is not divisible by `CHUNK_SIZE`, scripts stop with validation error.
 - Each chunk is validated to contain exactly `CHUNK_SIZE` products.
 - Total chunks are validated as `TOTAL_PRODUCTS / CHUNK_SIZE`.
+- `MOCKAROO_ENDPOINT` should be left empty in `.env` to use the schema-key-based URL (`/api/<schema_key>.json`).

@@ -1,17 +1,15 @@
-# Sample configuration variables for local development
+# API Configuration
 API_BASE_URL=https://fakestoreapi.com
 PRODUCTS_ENDPOINT=/products
 
 # Mockaroo configuration
 MOCKAROO_BASE_URL=https://api.mockaroo.com
-MOCKAROO_ENDPOINT=
+MOCKAROO_ENDPOINT= /products
 MOCKEROO_SCHEMA_KEY=your_mockaroo_schema_key
 MOCKEROO_API_KEY=your_mockaroo_api_key
 
-TOTAL_PRODUCTS=20
-CHUNK_SIZE=5
-RETRY_LIMIT=3
-CONCURRENCY_LIMIT=4
+
+# HTTP Settings
 REQUEST_TIMEOUT_SECONDS=20
 BACKOFF_BASE_SECONDS=1
 BACKOFF_MAX_SECONDS=16

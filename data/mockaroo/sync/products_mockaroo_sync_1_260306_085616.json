@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Gluten-Free Brownies",
+    "price": 540.88,
+    "description": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.",
+    "category": "electronics",
+    "image": "https://vk.com/vulputate.json?etiam=sed&vel=lacus&augue=morbi&vestibulum=sem&rutrum=mauris&rutrum=laoreet&neque=ut&aenean=rhoncus&auctor=aliquet&gravida=pulvinar&sem=sed&praesent=nisl&id=nunc&massa=rhoncus&id=dui&nisl=vel&venenatis=sem&lacinia=sed&aenean=sagittis&sit=nam&amet=congue&justo=risus&morbi=semper&ut=porta&odio=volutpat&cras=quam&mi=pede&pede=lobortis&malesuada=ligula&in=sit&imperdiet=amet&et=eleifend&commodo=pede&vulputate=libero&justo=quis&in=orci&blandit=nullam&ultrices=molestie&enim=nibh&lorem=in&ipsum=lectus&dolor=pellentesque&sit=at&amet=nulla&consectetuer=suspendisse&adipiscing=potenti",
+    "rating": {
+      "rate": 4.7,
+      "count": 96
+    }
+  },
+  {
+    "id": 2,
+    "title": "Tennis Racket",
+    "price": 830.74,
+    "description": "Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi.",
+    "category": "women's clothing",
+    "image": "https://virginia.edu/at/nibh/in/hac/habitasse/platea/dictumst.png?eros=posuere&viverra=cubilia&eget=curae&congue=mauris&eget=viverra&semper=diam&rutrum=vitae&nulla=quam&nunc=suspendisse&purus=potenti&phasellus=nullam&in=porttitor&felis=lacus&donec=at",
+    "rating": {
+      "rate": 4.6,
+      "count": 420
+    }
+  },
+  {
+    "id": 3,
+    "title": "Roasted Sweet Corn",
+    "price": 550.95,
+    "description": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus.",
+    "category": "men's clothing",
+    "image": "https://auda.org.au/nisl/venenatis/lacinia/aenean/sit.jpg?amet=ut&sapien=dolor&dignissim=morbi&vestibulum=vel&vestibulum=lectus&ante=in&ipsum=quam&primis=fringilla&in=rhoncus&faucibus=mauris&orci=enim&luctus=leo&et=rhoncus",
+    "rating": {
+      "rate": 2.1,
+      "count": 416
+    }
+  },
+  {
+    "id": 4,
+    "title": "Collapsible Storage Crates",
+    "price": 962.18,
+    "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat.",
+    "category": "men's clothing",
+    "image": "https://elpais.com/nulla/suspendisse.xml?lacus=curae&at=donec&velit=pharetra&vivamus=magna&vel=vestibulum&nulla=aliquet&eget=ultrices&eros=erat&elementum=tortor&pellentesque=sollicitudin&quisque=mi&porta=sit&volutpat=amet&erat=lobortis&quisque=sapien&erat=sapien&eros=non&viverra=mi&eget=integer&congue=ac&eget=neque&semper=duis&rutrum=bibendum&nulla=morbi&nunc=non&purus=quam&phasellus=nec&in=dui&felis=luctus&donec=rutrum&semper=nulla&sapien=tellus&a=in&libero=sagittis&nam=dui&dui=vel&proin=nisl&leo=duis&odio=ac&porttitor=nibh&id=fusce&consequat=lacus&in=purus&consequat=aliquet&ut=at&nulla=feugiat&sed=non&accumsan=pretium&felis=quis&ut=lectus&at=suspendisse&dolor=potenti&quis=in&odio=eleifend&consequat=quam&varius=a&integer=odio&ac=in&leo=hac&pellentesque=habitasse&ultrices=platea&mattis=dictumst&odio=maecenas&donec=ut&vitae=massa&nisi=quis&nam=augue&ultrices=luctus&libero=tincidunt&non=nulla&mattis=mollis&pulvinar=molestie&nulla=lorem&pede=quisque&ullamcorper=ut&augue=erat&a=curabitur&suscipit=gravida&nulla=nisi&elit=at&ac=nibh&nulla=in&sed=hac&vel=habitasse&enim=platea&sit=dictumst&amet=aliquam&nunc=augue&viverra=quam&dapibus=sollicitudin&nulla=vitae&suscipit=consectetuer&ligula=eget&in=rutrum&lacus=at&curabitur=lorem&at=integer&ipsum=tincidunt&ac=ante",
+    "rating": {
+      "rate": 3.0,
+      "count": 238
+    }
+  },
+  {
+    "id": 5,
+    "title": "Maple Cinnamon Granola",
+    "price": 391.55,
+    "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique.",
+    "category": "men's clothing",
+    "image": "https://ft.com/at/nibh/in.json?in=lobortis&quis=convallis&justo=tortor&maecenas=risus&rhoncus=dapibus&aliquam=augue&lacus=vel&morbi=accumsan&quis=tellus&tortor=nisi&id=eu&nulla=orci&ultrices=mauris&aliquet=lacinia&maecenas=sapien&leo=quis&odio=libero&condimentum=nullam&id=sit&luctus=amet&nec=turpis&molestie=elementum&sed=ligula&justo=vehicula&pellentesque=consequat&viverra=morbi&pede=a&ac=ipsum&diam=integer&cras=a&pellentesque=nibh&volutpat=in&dui=quis&maecenas=justo&tristique=maecenas&est=rhoncus&et=aliquam&tempus=lacus&semper=morbi&est=quis&quam=tortor&pharetra=id&magna=nulla&ac=ultrices&consequat=aliquet&metus=maecenas&sapien=leo&ut=odio&nunc=condimentum&vestibulum=id&ante=luctus&ipsum=nec&primis=molestie&in=sed&faucibus=justo&orci=pellentesque&luctus=viverra&et=pede&ultrices=ac&posuere=diam&cubilia=cras&curae=pellentesque&mauris=volutpat&viverra=dui&diam=maecenas&vitae=tristique&quam=est&suspendisse=et&potenti=tempus&nullam=semper&porttitor=est&lacus=quam&at=pharetra&turpis=magna&donec=ac&posuere=consequat&metus=metus&vitae=sapien&ipsum=ut&aliquam=nunc&non=vestibulum&mauris=ante",
+    "rating": {
+      "rate": 2.5,
+      "count": 50
+    }
+  }
+]

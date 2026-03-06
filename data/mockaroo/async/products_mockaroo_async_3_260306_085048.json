@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Portable Speaker Stand",
+    "price": 353.63,
+    "description": "In sagittis dui vel nisl. Duis ac nibh.",
+    "category": "jewelery",
+    "image": "https://patch.com/et/magnis/dis/parturient.xml?odio=etiam&cras=vel&mi=augue&pede=vestibulum&malesuada=rutrum&in=rutrum&imperdiet=neque&et=aenean&commodo=auctor&vulputate=gravida&justo=sem&in=praesent&blandit=id&ultrices=massa&enim=id&lorem=nisl&ipsum=venenatis&dolor=lacinia&sit=aenean&amet=sit&consectetuer=amet&adipiscing=justo&elit=morbi&proin=ut&interdum=odio&mauris=cras&non=mi&ligula=pede&pellentesque=malesuada&ultrices=in",
+    "rating": {
+      "rate": 2.9,
+      "count": 93
+    }
+  },
+  {
+    "id": 2,
+    "title": "Compact Electric Kettle",
+    "price": 173.97,
+    "description": "Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
+    "category": "jewelery",
+    "image": "https://tripod.com/ullamcorper/purus.js?aliquam=at&augue=nibh&quam=in&sollicitudin=hac&vitae=habitasse&consectetuer=platea&eget=dictumst&rutrum=aliquam&at=augue&lorem=quam&integer=sollicitudin&tincidunt=vitae&ante=consectetuer&vel=eget&ipsum=rutrum&praesent=at&blandit=lorem&lacinia=integer&erat=tincidunt&vestibulum=ante&sed=vel&magna=ipsum&at=praesent&nunc=blandit&commodo=lacinia&placerat=erat&praesent=vestibulum&blandit=sed&nam=magna&nulla=at&integer=nunc&pede=commodo&justo=placerat&lacinia=praesent&eget=blandit&tincidunt=nam&eget=nulla&tempus=integer&vel=pede&pede=justo&morbi=lacinia&porttitor=eget&lorem=tincidunt&id=eget&ligula=tempus&suspendisse=vel&ornare=pede&consequat=morbi&lectus=porttitor&in=lorem&est=id&risus=ligula&auctor=suspendisse&sed=ornare&tristique=consequat&in=lectus&tempus=in&sit=est&amet=risus&sem=auctor&fusce=sed&consequat=tristique&nulla=in&nisl=tempus&nunc=sit&nisl=amet&duis=sem&bibendum=fusce&felis=consequat&sed=nulla&interdum=nisl&venenatis=nunc&turpis=nisl&enim=duis&blandit=bibendum&mi=felis&in=sed&porttitor=interdum&pede=venenatis&justo=turpis&eu=enim&massa=blandit&donec=mi&dapibus=in&duis=porttitor&at=pede",
+    "rating": {
+      "rate": 3.0,
+      "count": 117
+    }
+  },
+  {
+    "id": 3,
+    "title": "Smartphone UV Sanitizer",
+    "price": 499.65,
+    "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
+    "category": "women's clothing",
+    "image": "https://amazon.co.jp/odio/curabitur/convallis/duis/consequat/dui/nec.png?ultrices=in&posuere=hac&cubilia=habitasse&curae=platea&nulla=dictumst&dapibus=etiam&dolor=faucibus&vel=cursus&est=urna&donec=ut&odio=tellus&justo=nulla&sollicitudin=ut&ut=erat&suscipit=id&a=mauris&feugiat=vulputate&et=elementum&eros=nullam&vestibulum=varius&ac=nulla&est=facilisi&lacinia=cras&nisi=non&venenatis=velit&tristique=nec&fusce=nisi&congue=vulputate&diam=nonummy&id=maecenas&ornare=tincidunt&imperdiet=lacus&sapien=at&urna=velit&pretium=vivamus",
+    "rating": {
+      "rate": 3.9,
+      "count": 85
+    }
+  },
+  {
+    "id": 4,
+    "title": "Honey-Balsamic Vinaigrette",
+    "price": 405.53,
+    "description": "Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit.",
+    "category": "men's clothing",
+    "image": "http://altervista.org/congue/diam/id.aspx?justo=sagittis&sit=nam&amet=congue&sapien=risus&dignissim=semper&vestibulum=porta&vestibulum=volutpat&ante=quam&ipsum=pede&primis=lobortis&in=ligula&faucibus=sit&orci=amet&luctus=eleifend&et=pede&ultrices=libero&posuere=quis&cubilia=orci&curae=nullam&nulla=molestie&dapibus=nibh&dolor=in&vel=lectus&est=pellentesque&donec=at&odio=nulla&justo=suspendisse&sollicitudin=potenti&ut=cras&suscipit=in&a=purus&feugiat=eu&et=magna&eros=vulputate&vestibulum=luctus&ac=cum&est=sociis&lacinia=natoque&nisi=penatibus&venenatis=et&tristique=magnis&fusce=dis&congue=parturient&diam=montes&id=nascetur&ornare=ridiculus&imperdiet=mus&sapien=vivamus",
+    "rating": {
+      "rate": 2.4,
+      "count": 152
+    }
+  },
+  {
+    "id": 5,
+    "title": "Scented Candle Set",
+    "price": 863.32,
+    "description": "Sed accumsan felis. Ut at dolor quis odio consequat varius.",
+    "category": "electronics",
+    "image": "https://free.fr/primis/in.aspx?sapien=eget&iaculis=eros&congue=elementum&vivamus=pellentesque&metus=quisque&arcu=porta&adipiscing=volutpat&molestie=erat&hendrerit=quisque&at=erat&vulputate=eros&vitae=viverra&nisl=eget&aenean=congue&lectus=eget&pellentesque=semper&eget=rutrum&nunc=nulla&donec=nunc&quis=purus&orci=phasellus&eget=in&orci=felis&vehicula=donec&condimentum=semper&curabitur=sapien&in=a&libero=libero&ut=nam&massa=dui&volutpat=proin&convallis=leo&morbi=odio&odio=porttitor&odio=id&elementum=consequat&eu=in&interdum=consequat&eu=ut&tincidunt=nulla&in=sed&leo=accumsan&maecenas=felis&pulvinar=ut&lobortis=at&est=dolor&phasellus=quis",
+    "rating": {
+      "rate": 3.2,
+      "count": 176
+    }
+  }
+]

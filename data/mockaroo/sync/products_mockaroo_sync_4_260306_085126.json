@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Smart Scale",
+    "price": 138.86,
+    "description": "Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+    "category": "men's clothing",
+    "image": "https://vistaprint.com/curabitur/at/ipsum/ac/tellus.js?ultrices=ut&libero=dolor&non=morbi&mattis=vel&pulvinar=lectus&nulla=in&pede=quam&ullamcorper=fringilla&augue=rhoncus&a=mauris",
+    "rating": {
+      "rate": 3.8,
+      "count": 135
+    }
+  },
+  {
+    "id": 2,
+    "title": "Oven-Baked Sweet Potato Fries",
+    "price": 924.82,
+    "description": "Nulla justo. Aliquam quis turpis eget elit sodales scelerisque.",
+    "category": "electronics",
+    "image": "http://bandcamp.com/volutpat/dui/maecenas/tristique/est/et.aspx?sed=pharetra&magna=magna&at=vestibulum",
+    "rating": {
+      "rate": 4.1,
+      "count": 105
+    }
+  },
+  {
+    "id": 3,
+    "title": "Smart Scale",
+    "price": 55.11,
+    "description": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.",
+    "category": "men's clothing",
+    "image": "http://reference.com/suspendisse/potenti/in/eleifend.jsp?elit=ut&sodales=rhoncus&scelerisque=aliquet&mauris=pulvinar&sit=sed&amet=nisl&eros=nunc&suspendisse=rhoncus&accumsan=dui&tortor=vel&quis=sem&turpis=sed&sed=sagittis&ante=nam&vivamus=congue&tortor=risus&duis=semper&mattis=porta&egestas=volutpat&metus=quam&aenean=pede&fermentum=lobortis&donec=ligula&ut=sit&mauris=amet&eget=eleifend&massa=pede&tempor=libero&convallis=quis&nulla=orci&neque=nullam&libero=molestie&convallis=nibh&eget=in&eleifend=lectus&luctus=pellentesque&ultricies=at&eu=nulla&nibh=suspendisse&quisque=potenti&id=cras&justo=in&sit=purus&amet=eu&sapien=magna&dignissim=vulputate&vestibulum=luctus&vestibulum=cum&ante=sociis&ipsum=natoque&primis=penatibus&in=et&faucibus=magnis&orci=dis&luctus=parturient&et=montes&ultrices=nascetur&posuere=ridiculus&cubilia=mus&curae=vivamus&nulla=vestibulum&dapibus=sagittis&dolor=sapien&vel=cum&est=sociis&donec=natoque&odio=penatibus&justo=et&sollicitudin=magnis&ut=dis",
+    "rating": {
+      "rate": 2.2,
+      "count": 399
+    }
+  },
+  {
+    "id": 4,
+    "title": "Coffee Making Kit",
+    "price": 833.6,
+    "description": "Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia.",
+    "category": "jewelery",
+    "image": "https://seattletimes.com/maecenas/rhoncus/aliquam/lacus.js?et=aliquet&magnis=maecenas&dis=leo&parturient=odio&montes=condimentum&nascetur=id&ridiculus=luctus&mus=nec&etiam=molestie&vel=sed&augue=justo&vestibulum=pellentesque&rutrum=viverra&rutrum=pede&neque=ac&aenean=diam&auctor=cras&gravida=pellentesque&sem=volutpat&praesent=dui&id=maecenas&massa=tristique&id=est&nisl=et&venenatis=tempus&lacinia=semper&aenean=est&sit=quam&amet=pharetra&justo=magna&morbi=ac&ut=consequat&odio=metus&cras=sapien&mi=ut&pede=nunc&malesuada=vestibulum",
+    "rating": {
+      "rate": 3.7,
+      "count": 392
+    }
+  },
+  {
+    "id": 5,
+    "title": "Spaghetti and Meatball Dinner Kit",
+    "price": 240.35,
+    "description": "Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.",
+    "category": "men's clothing",
+    "image": "https://bing.com/ut.aspx?pellentesque=maecenas&eget=tincidunt&nunc=lacus&donec=at&quis=velit&orci=vivamus&eget=vel&orci=nulla&vehicula=eget&condimentum=eros&curabitur=elementum&in=pellentesque&libero=quisque&ut=porta&massa=volutpat&volutpat=erat&convallis=quisque&morbi=erat&odio=eros&odio=viverra&elementum=eget&eu=congue&interdum=eget&eu=semper&tincidunt=rutrum&in=nulla&leo=nunc&maecenas=purus&pulvinar=phasellus&lobortis=in&est=felis&phasellus=donec&sit=semper&amet=sapien&erat=a&nulla=libero&tempus=nam&vivamus=dui&in=proin&felis=leo&eu=odio&sapien=porttitor&cursus=id&vestibulum=consequat&proin=in&eu=consequat&mi=ut&nulla=nulla&ac=sed&enim=accumsan&in=felis&tempor=ut&turpis=at&nec=dolor&euismod=quis&scelerisque=odio&quam=consequat&turpis=varius&adipiscing=integer&lorem=ac&vitae=leo&mattis=pellentesque&nibh=ultrices&ligula=mattis&nec=odio&sem=donec&duis=vitae&aliquam=nisi",
+    "rating": {
+      "rate": 1.8,
+      "count": 434
+    }
+  }
+]

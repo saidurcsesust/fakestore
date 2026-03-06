@@ -2,8 +2,9 @@ from __future__ import annotations
 
 import asyncio
 
-from sync_async.extract_products_sync import ProductExtractorSync
-from sync_async.extract_products_async import ProductExtractorAsync
+
+from extract_products_sync import ProductExtractorSync
+from extract_products_async import ProductExtractorAsync
 
 
 def main() -> None:

@@ -5,8 +5,11 @@ from typing import Any, Dict, List
 
 import requests
 import config
-from sync_async.base_extractor import BaseProductExtractor
+from base_extractor import BaseProductExtractor
 
+
+TOTAL_PRODUCTS = 20
+CHUNK_SIZE = 5
 
 class ProductExtractorSync(BaseProductExtractor):
     script_name = "extract_products_sync"
@@ -17,7 +20,7 @@ class ProductExtractorSync(BaseProductExtractor):
         self.session.headers.update({"User-Agent": config.USER_AGENT})
 
     def _request_with_retry(self, url: str) -> List[Dict[str, Any]]:
-        for attempt in range(config.RETRY_LIMIT + 1):
+        for attempt in range(4):
             request_id = self._make_request_id(attempt)
             started = time.perf_counter()
             status_code: int | None = None
@@ -47,7 +50,7 @@ class ProductExtractorSync(BaseProductExtractor):
                     request_id, url, status_code, elapsed_ms,
                     level="error", exc=exc,
                 )
-                if attempt >= config.RETRY_LIMIT:
+                if attempt >= 4:
                     raise
                 time.sleep(self._backoff(attempt))
 
@@ -56,19 +59,19 @@ class ProductExtractorSync(BaseProductExtractor):
     def run(self) -> None:
         started = time.perf_counter()
         self.logger.info(
-            f"Starting sync extraction for {config.TOTAL_PRODUCTS} products "
+            f"Starting sync extraction for {TOTAL_PRODUCTS} products "
             f"in {self.expected_chunks} chunks"
         )
 
         extracted_count = 0
         for chunk_index in range(self.expected_chunks):
-            url = self._build_url(skip=chunk_index * config.CHUNK_SIZE)
+            url = self._build_url(skip=chunk_index * CHUNK_SIZE)
             products = self._request_with_retry(url)
 
-            if len(products) != config.CHUNK_SIZE:
+            if len(products) != CHUNK_SIZE:
                 raise ValueError(
                     f"Chunk size mismatch at chunk {chunk_index + 1}: "
-                    f"expected {config.CHUNK_SIZE}, got {len(products)}"
+                    f"expected {CHUNK_SIZE}, got {len(products)}"
                 )
 
             extracted_count += len(products)
