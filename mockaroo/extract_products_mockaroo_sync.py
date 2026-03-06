@@ -1,5 +1,3 @@
-"""Synchronous extractor for Mockaroo products."""
-
 from __future__ import annotations
 
 import time
@@ -22,10 +20,8 @@ from mockaroo.mockaroo_common import (
 
 
 class ProductExtractorMockarooSync:
-    """Extract product data in chunks from Mockaroo using sync requests."""
 
     def __init__(self) -> None:
-        """Initialize sync extractor state and dependencies."""
         self.script_name = "extract_products_mockaroo_sync"
         self.date_str, self.time_str = build_run_timestamps()
         self.logger = setup_json_logger(self.script_name, self.date_str, self.time_str)
@@ -37,7 +33,6 @@ class ProductExtractorMockarooSync:
         self.params = build_mockaroo_params()
 
     def _request_with_retry(self, chunk_number: int) -> List[Dict[str, Any]]:
-        """Request one chunk with exponential-backoff retries."""
         for attempt in range(config.RETRY_LIMIT + 1):
             request_id = f"req-{int(time.time() * 1000)}-{chunk_number}-{attempt}"
             started = time.perf_counter()
@@ -102,7 +97,7 @@ class ProductExtractorMockarooSync:
         raise RuntimeError("Retry loop exhausted unexpectedly")
 
     def run(self) -> None:
-        """Execute complete synchronous extraction workflow."""
+        # execute complete synchronous extraction workflow.
         started = time.perf_counter()
         self.logger.info(
             f"Starting Mockaroo sync extraction for {config.TOTAL_PRODUCTS} products in {self.expected_chunks} chunks"

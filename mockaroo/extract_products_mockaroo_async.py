@@ -156,5 +156,6 @@ class ProductExtractorMockarooAsync:
 
         total_elapsed_ms = (time.perf_counter() - started) * 1000
         self.logger.info(
+            "Mockaroo async extraction completed",
             extra={"elapsed_ms": round(total_elapsed_ms, 2)},
         )
